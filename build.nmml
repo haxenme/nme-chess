@@ -29,6 +29,9 @@
      <asset name="opening.book" />
   </assets>
 
+  <!-- Use relative path to nme runtime -->
+  <set name="nmeUrl" value="" />
+
   <source path="src" />
   
   <haxelib name="nme" />
