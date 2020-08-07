@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+  
+  <meta
+     title="NME Chess"
+     package="com.nmehost.chess"
+     version="1.0.0"
+     company="nme" 
+  />
+  
+  <app
+     file="Application" 
+     main="Main"
+  />
+  
+  <window
+     width="640" 
+     height="480" 
+     orientation="landscape" 
+     fps="20"
+     background="0xffffff"
+     require_shaders="true"
+     resizable="true"
+     hardware="true"
+  />
+
+  <assets from="assets" >
+     <asset name="chess.svg" />
+     <asset name="opening.book" />
+  </assets>
+
+  <source path="src" />
+  
+  <haxelib name="nme" />
+  <haxelib name="gm2d" />
+  
+</project>

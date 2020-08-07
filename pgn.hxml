@@ -1,0 +1,4 @@
+-main ParsePgn
+-cpp cpp
+-D HXCPP_M64
+-cp src
