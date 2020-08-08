@@ -173,7 +173,7 @@ class Main extends Screen
          return;
 
       sqSize = ss;
-      var bitmap = new BitmapData(7*sqSize, 3*sqSize);
+      var bitmap = new BitmapData(7*sqSize, 3*sqSize, true, 0);
 
       var sprite = new Sprite();
       var px = 0;
