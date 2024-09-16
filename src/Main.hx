@@ -105,33 +105,33 @@ class Main extends Screen
    {
       function half(rgb:Int)
         return (rgb&0xfcfcfc)>>2;
-      var p = Skin.scale(2);
-      Skin.replaceAttribs( "DialogTitle", {
+      var p = skin.scale(2);
+      skin.replaceAttribs( "DialogTitle", {
            align: Layout.AlignStretch | Layout.AlignCenterY,
            textAlign: "center",
            font: "Gothic",
-           fontSize: Skin.scale(20),
-           padding: Skin.scale(10),
+           fontSize: skin.scale(20),
+           padding: skin.scale(10),
            shape: ShapeNone,
            //hitBoxId: HitBoxes.Title,
       } );
-      Skin.addAttribs( "TextLabel", {
+      skin.addAttribs( "TextLabel", {
            font: "Gothic",
       });
-      Skin.addAttribs( "Panel", {
-           lineGap: Skin.scale(20),
-           buttonGap: Skin.scale(20),
+      skin.addAttribs( "Panel", {
+           lineGap: skin.scale(20),
+           buttonGap: skin.scale(20),
       });
 
-      Skin.replaceAttribs( "Dialog", {
+      skin.replaceAttribs( "Dialog", {
            shape: ShapeRoundRectRad( 5*Skin.dpiScale ),
            //line: LineSolid(p, half(0x8C5934), 1 ),
-           chromeFilters: Skin.shadowFilters,
+           chromeFilters: skin.shadowFilters,
            fill: FillSolid( 0xffffff,1 ),
            //fill: FillSolid( 0xffffff - half(0xffffff-0xE4CBa5),1),
       });
-      var bx = Skin.scale(20);
-      Skin.replaceAttribs( "Button", {
+      var bx = skin.scale(20);
+      skin.replaceAttribs( "Button", {
            parent:"Control",
            shape: ShapeRect,
            //fill: FillSolid( 0xffffff - half(0xffffff-0xE4CBa5),1),
@@ -141,13 +141,13 @@ class Main extends Screen
            itemAlign: Layout.AlignCenter,
            //padding: new Rectangle(buttonBorderX,buttonBorderY,buttonBorderX*2,buttonBorderY*2),
            padding: new Rectangle(bx,p,bx*2,p*2),
-           offset: new Point(Skin.scale(1),Skin.scale(1)),
+           offset: new Point(skin.scale(1),skin.scale(1)),
       });
    }
 
    function createHamburger()
    {
-      var s = Skin.scale(28);
+      var s = skin.scale(28);
       var shape = new nme.display.Shape();
       var gfx = shape.graphics;
       gfx.beginFill(0x8C5934);
